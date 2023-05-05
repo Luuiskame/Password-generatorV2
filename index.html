@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/39b3f4e339.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Password generator </title>
+</head>
+<body>
+    <h1 class="title">Password generator</h1>
+    
+    <div class="row characters__length-container">
+        
+        <h2 class="num__of-characters">Number of characters</h2>
+        <div class="num__of-characters-container">
+
+            <div class="result-container"><input class="input-slider" type="range" min="8" max="30" value="16">
+                <p class="input__slider-value">16</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <main class="row hero">
+        <div class="general__button-container simbols-container">
+            <p class="simbols-text">Simbols</p>
+            <button class="general-button simbols-btn"><div class="check-container" id="check-container1"><i class="check fa-solid fa-check"></div></i> <div class="eraser-container" id="erase-container1"><i class="eraser fa-solid fa-eraser"></i></div></button>
+        </div>
+
+        <div class="general__button-container numbers-container">
+            <p class="numbers-text">Numbers</p>
+            <button class="general-button numbers-btn"> <div class="check-container" id="check-container2"><i class="check fa-solid fa-check"></div></i> <div class="eraser-container" id="erase-container2"><i class="eraser fa-solid fa-eraser"></i></div></button>
+        </div>
+
+        <div class="general__button-container capital__letters-container">
+            <p class="capital__letters-text">Capital letters</p>
+            <button class="general-button capital__letters-btn"><div class="check-container" id="check-container3"><i class="check fa-solid fa-check"></div></i> <div class="eraser-container" id="erase-container3"><i class="eraser fa-solid fa-eraser"></i></div></button>
+        </div>
+
+            <div class="general__button-container lowercase-container">
+                <p class="lowecase-text">Lowercase</p>
+                <button class="general-button lowercase-btn"><div class="check-container" id="check-container4"><i class="check fa-solid fa-check"></div></i> <div class="eraser-container" id="erase-container4"><i class="eraser fa-solid fa-eraser"></i></div></button>
+            </div>
+        
+        </div>
+    </main>
+    <div class="generate-container">
+        <button action="submit" class="general-button generate-password">Generate password</button>
+        <div class="password-container">
+        <input class="password" type="text" value="Password"> 
+        </div>
+    </div>
+    <div class="copy-password">password copied<i class="fa-solid fa-copy"></i></div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

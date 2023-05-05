@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background:  #133463;
+    font-family: 'Roboto', sans-serif;
+    color: #F4EFDC;
+}
+
+.title {
+    margin-top: 1em;
+    text-align: center;
+    /* color: #555 */
+}
+
+.row {
+    width: 90%;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.characters__length-container {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.num__of-characters {
+    margin-bottom: 1em;
+}
+
+.num__of-characters-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* h2 {
+    color: #555;
+} */
+
+/* first changes on the btns */
+
+.plus__btn-container {
+    width: 50%;
+}
+
+.minus__btn-container {
+    width: 50%;
+}
+.plus-btn {
+    height:2em;
+    width: 100%;
+    background-color: #365FB7;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.minus-btn {
+    height: 2em;
+    width: 100%;
+    background-color: #365FB7;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.result {
+    margin: 0 6px;
+}
+
+/* working on the middle part */
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2em;
+    gap: 2em;
+    max-width: 450px;
+}
+
+.simbols-container {
+    gap: 6px;
+}
+
+.general__button-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.general-button {
+    height: 2em;
+    width: 30%;
+    background-color: #365FB7;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: ease .5s;
+    cursor: pointer;
+}
+
+.general-button:hover{
+    background-color:  #133488;
+}
+
+.general-button.darkGrey {
+    background: #333;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.generate-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.4em;
+    justify-content: center;
+    align-items: center;
+}
+
+.generate-password {
+    height: 2.5em;
+    width: 40%;
+    max-width: 196px;
+    cursor: pointer;
+    border: none;
+    transition: ease-in-out 1s;
+}
+
+.generate-password::after {
+    content: "";
+    height: 100px;
+    width: 100px;
+}
+
+.generate-password:hover {
+    background-color: #133488;
+}
+
+.password-container {
+    border-radius: 10px;
+    max-width: 80%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-container:hover {
+    background-color: #133463;
+}
+
+.password {
+    border-radius: 5px;
+    height: 2em;
+    text-align: center;
+    margin-right: 5px;
+    line-height: 2;
+    cursor: pointer;
+    border: 2px solid  #365FB7;
+}
+
+.password.copied {
+    background-color: #333;
+    color: white;
+}
+
+.copy-password {
+    color: rgba(255,255,255,0);
+    transition: all .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+
+}.copy-password.show {
+    color: rgba(255,255,255,1);
+}
+
+.eraser-container {
+    display: none;
+}
+
+.eraser-container.show {
+    display: block;
+}
+
+.check-container.hide {
+    display: none;
+}
+
+
